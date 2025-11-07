@@ -10,7 +10,7 @@ const skills = [
   { name: "MySQL", logo: "/mysql.png" },
   { name: "React", logo: "/react.png" },
   { name: "Git", logo: "/git.png" },
-  { name: "AWS", logo: "/aws.png", learning: true },
+  { name: "AWS", logo: "/AWS.png", learning: true },
   { name: "Terraform", logo: "/terraform.png", learning: true },
   { name: "Kubernetes", logo: "/kubernetes.png", upcoming: true },
   { name: "Docker", logo: "/docker.png", upcoming: true },
