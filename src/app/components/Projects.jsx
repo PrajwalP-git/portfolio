@@ -60,7 +60,7 @@ export default function Projects() {
         variant="h4"
         gutterBottom
         fontWeight="bold"
-        color={theme.palette.text.primary}
+        sx={{color:"#4682B4"}}
       >
         Projects
       </Typography>
