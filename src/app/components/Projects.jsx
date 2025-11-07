@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Typography, Chip, Divider, Stack, Paper } from "@mui/material";
+import { Box, Typography, Chip, Divider, Stack, Paper, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 
 const projects = [
@@ -52,12 +52,20 @@ const getColor = (status) => {
 };
 
 export default function Projects() {
+  const theme = useTheme();
+
   return (
     <Box id="projects" sx={{ mt: 10, px: { xs: 2, md: 6 } }}>
-      <Typography variant="h4" gutterBottom fontWeight="bold" color="white">
+      <Typography
+        variant="h4"
+        gutterBottom
+        fontWeight="bold"
+        color={theme.palette.text.primary}
+      >
         Projects
       </Typography>
-      <Divider sx={{ mb: 3, bgcolor: "grey.700" }} />
+
+      <Divider sx={{ mb: 3, bgcolor: theme.palette.divider }} />
 
       <Stack spacing={3}>
         {projects.map((project, index) => (
@@ -73,8 +81,8 @@ export default function Projects() {
               elevation={3}
               sx={{
                 p: { xs: 2, md: 3 },
-                backgroundColor: "#121212",
-                color: "white",
+                backgroundColor: theme.palette.background.paper,
+                color: theme.palette.text.primary,
                 borderRadius: 3,
               }}
             >
@@ -87,20 +95,21 @@ export default function Projects() {
                 size="small"
                 sx={{ mt: 1 }}
               />
-              <Typography variant="body2" sx={{ mt: 1, color: "#bdbdbd" }}>
+              <Typography variant="body2" sx={{ mt: 1, color: theme.palette.text.secondary }}>
                 {project.stack}
               </Typography>
               {project.link && (
                 <Typography
                   variant="body2"
-                  sx={{
-                    mt: 1,
-                    color: "#64b5f6",
-                    textDecoration: "none",
-                  }}
                   component="a"
                   href={project.link}
                   target="_blank"
+                  sx={{
+                    mt: 1,
+                    color: theme.palette.primary.main,
+                    textDecoration: "none",
+                    "&:hover": { textDecoration: "underline" },
+                  }}
                 >
                   View on GitHub
                 </Typography>
