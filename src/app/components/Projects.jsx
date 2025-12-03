@@ -19,10 +19,10 @@ const projects = [
     emoji: "📚",
   },
   {
-    title: "SaaS Project Management Dashboard",
+    title: "Movie Recommedation System",
     status: "In Progress",
-    stack: "Next.js, React, PostgreSQL",
-    emoji: "📊",
+    stack: "PostgreSQL, Express, Nextjs+MUI, Nodejs",
+    emoji: "📽️🍿",
   },
   {
     title: "E-commerce API",
