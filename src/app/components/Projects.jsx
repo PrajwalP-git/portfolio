@@ -19,9 +19,9 @@ const projects = [
     emoji: "📚",
   },
   {
-    title: "Movie Recommedation System",
+    title: "Movie Recommedation System with REST API",
     status: "In Progress",
-    stack: "PostgreSQL, Express, Nextjs+MUI, Nodejs",
+    stack: "PostgreSQL, Express, Reactjs+MUI, Nodejs",
     emoji: "📽️🍿",
   },
   {
@@ -31,10 +31,10 @@ const projects = [
     emoji: "🛜🏬",
   },
   {
-    title: "AI Voice Assistant",
+    title: "Cloud-based File Manager",
     status: "Upcoming",
-    stack: "FastAPI, Anthropic API, MySQL",
-    emoji: "🤖",
+    stack: "FastAPI, React, MySQL, Redis",
+    emoji: "📁",
   },
 ];
 
