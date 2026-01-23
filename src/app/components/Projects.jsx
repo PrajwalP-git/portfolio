@@ -38,10 +38,6 @@ const projects = [
     status: "Upcoming",
     stack: "FastAPI, React, MySQL, Redis, K8s, AWS, Github, CI/CD",
     emoji: "📁☁️",
-
-    stack: "FastAPI, React, MySQL, Redis",
-    emoji: "📁",
-
   },
 ];
 
