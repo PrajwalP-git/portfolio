@@ -19,22 +19,23 @@ const projects = [
     emoji: "📚",
   },
   {
-    title: "Movie Recommedation System",
-    status: "In Progress",
-    stack: "PostgreSQL, Express, Nextjs+MUI, Nodejs",
-    emoji: "📽️🍿",
+    title: "Dockerized Medicare API",
+    status: "Completed",
+    stack: "Django, SQLite, GitHub, Docker, DRF",
+    link: "https://github.com/PrajwalP-git/Medicare-API",
+    emoji: "🏥",
   },
   {
-    title: "E-commerce API",
-    status: "Upcoming",
-    stack: "Django, HTML/CSS/JS, PostgreSQL",
+    title: "Backend heavy E-commerce Platform",
+    status: "In Progress",
+    stack: "Django, React(For UI), PostgreSQL, GitHub, AWS, Docker",
     emoji: "🛜🏬",
   },
   {
-    title: "AI Voice Assistant",
+    title: "Cloud-based File Manager",
     status: "Upcoming",
-    stack: "FastAPI, Anthropic API, MySQL",
-    emoji: "🤖",
+    stack: "FastAPI, React, MySQL, Redis, K8s, AWS, Github, CI/CD",
+    emoji: "📁☁️",
   },
 ];
 
@@ -44,7 +45,7 @@ const getColor = (status) => {
       return "success";
     case "In Progress":
       return "warning";
-    case "Upcoming":
+    case "Upcoming/Future":
       return "info";
     default:
       return "default";
