@@ -24,6 +24,8 @@ const projects = [
     stack: "Django, SQLite, GitHub, Docker, DRF",
     link: "https://github.com/PrajwalP-git/Medicare-API",
     emoji: "🏥",
+
+  
   },
   {
     title: "Backend heavy E-commerce Platform",
@@ -36,6 +38,10 @@ const projects = [
     status: "Upcoming",
     stack: "FastAPI, React, MySQL, Redis, K8s, AWS, Github, CI/CD",
     emoji: "📁☁️",
+
+    stack: "FastAPI, React, MySQL, Redis",
+    emoji: "📁",
+
   },
 ];
 
