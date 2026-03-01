@@ -16,11 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actiosn/checkout
 
-      - name: Setup Node.js
-        uses: actions/setup-node@4
-        with:
-          node-version: 10 
-          cache: 'npm
+    
 
       - name: Install dependencies
         run: npm cli
