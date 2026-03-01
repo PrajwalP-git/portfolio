@@ -14,12 +14,16 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actiosn/checkout
+        uses: actions/checkout
 
-    
+      - name: Setup Node.js
+        uses: actions/setup-node@4
+        with:
+          node-version: 20 
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm cli
+        run: npm ci
 
       - name: Run lint
         run: npm ci
