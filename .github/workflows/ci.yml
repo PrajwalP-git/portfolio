@@ -19,10 +19,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@4
         with:
-          node-version: 
+          node-version: 10 
+          cache: 'npm
 
-      - name Install dependencies
-        run: npm install
+      - name: Install dependencies
+        run: npm cli
+
+      - name: Run lint
+        run: npm ci
 
       - name: Build project
         run: npm run build
